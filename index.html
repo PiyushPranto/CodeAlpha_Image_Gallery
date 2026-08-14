@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeAlpha | Image Gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header"><nav class="nav container">
+<a class="brand" href="#">Gallery<span>.</span></a>
+<button class="menu-btn" aria-label="Toggle menu">☰</button>
+<div class="nav-links"><a href="#gallery">Gallery</a><a href="#about">About</a></div>
+</nav></header>
+<main>
+<section class="hero container">
+<p class="eyebrow">CODEALPHA • TASK 1</p>
+<h1>Explore the <span>Gallery.</span></h1>
+<p>A responsive image gallery with categories, smooth transitions, lightbox viewing and keyboard navigation.</p>
+<a class="btn" href="#gallery">Explore Gallery ↓</a>
+</section>
+<section id="gallery" class="gallery-section container">
+<div class="section-head"><div><p class="eyebrow">SELECTED COLLECTION</p><h2>Visual Stories</h2></div>
+<div class="filters">
+<button class="filter active" data-filter="all">All</button>
+<button class="filter" data-filter="nature">Nature</button>
+<button class="filter" data-filter="city">City</button>
+<button class="filter" data-filter="travel">Travel</button>
+</div></div>
+<div class="gallery">
+<figure class="gallery-item" data-category="nature" tabindex="0"><img src="images/nature-1.svg" alt="Mountain landscape"><figcaption><span>Nature</span><strong>Mountain Escape</strong></figcaption></figure>
+<figure class="gallery-item" data-category="nature" tabindex="0"><img src="images/nature-2.svg" alt="Forest landscape"><figcaption><span>Nature</span><strong>Into the Forest</strong></figcaption></figure>
+<figure class="gallery-item" data-category="city" tabindex="0"><img src="images/city-1.svg" alt="Modern city skyline"><figcaption><span>City</span><strong>Urban Lights</strong></figcaption></figure>
+<figure class="gallery-item" data-category="city" tabindex="0"><img src="images/city-2.svg" alt="City architecture"><figcaption><span>City</span><strong>Architecture</strong></figcaption></figure>
+<figure class="gallery-item" data-category="travel" tabindex="0"><img src="images/travel-1.svg" alt="Coastal travel scene"><figcaption><span>Travel</span><strong>Coastal Road</strong></figcaption></figure>
+<figure class="gallery-item" data-category="travel" tabindex="0"><img src="images/travel-2.svg" alt="Desert travel scene"><figcaption><span>Travel</span><strong>Open Road</strong></figcaption></figure>
+</div>
+</section>
+<section id="about" class="about container"><p class="eyebrow">ABOUT THIS PROJECT</p><h2>Built with HTML, CSS & JavaScript.</h2><p>Features include responsive layout, category filtering, hover interactions, lightbox viewing, next/previous navigation and keyboard controls.</p></section>
+</main>
+<div class="lightbox" id="lightbox" aria-hidden="true">
+<button class="close" aria-label="Close">×</button><button class="lightbox-nav prev" aria-label="Previous">‹</button>
+<div class="lightbox-content"><img id="lightboxImage" src="" alt=""><p id="lightboxCaption"></p></div>
+<button class="lightbox-nav next" aria-label="Next">›</button>
+</div>
+<footer class="footer"><div class="container"><span>CodeAlpha Task 1 • Image Gallery</span><span>HTML • CSS • JavaScript</span></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
